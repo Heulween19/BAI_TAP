@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Manage_User.Models;
 
 namespace Manage_User.Models;
 
