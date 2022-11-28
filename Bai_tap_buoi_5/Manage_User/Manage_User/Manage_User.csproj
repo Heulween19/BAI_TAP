@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="IdentityModel.OidcClient.IdentityTokenValidator" Version="5.1.0" />
+    <PackageReference Include="IdentityModel.OidcClient.Unofficial" Version="2.1.2" />
+    <PackageReference Include="IronBox.Auth0.Clients" Version="1.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
       <PrivateAssets>all</PrivateAssets>
