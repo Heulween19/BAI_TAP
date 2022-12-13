@@ -1,5 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Manage_User.Models;
 
 namespace Manage_User.Models
@@ -41,6 +46,8 @@ namespace Manage_User.Models
             oai.DbUsers.Remove(n);
             oai.SaveChanges();
         }
+
+        
 
 
     }

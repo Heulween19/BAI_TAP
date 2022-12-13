@@ -1,21 +1,34 @@
 ﻿using Manage_User.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Cryptography;
+using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
+using System.Text;
+using Manage_User.Constant;
+
 
 namespace Manage_User.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private DbUserContext _db = new DbUserContext();
 
         Class1 oai = new Class1();
-
-        //public Class1 Oai { get => oai; set => oai = value; }
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost, ActionName("Login")]
+        
 
         public IActionResult Index()
         {

@@ -10,6 +10,7 @@
     <PackageReference Include="IdentityModel.OidcClient.IdentityTokenValidator" Version="5.1.0" />
     <PackageReference Include="IdentityModel.OidcClient.Unofficial" Version="2.1.2" />
     <PackageReference Include="IronBox.Auth0.Clients" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -22,6 +23,12 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.7.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\LoginController1\" />
   </ItemGroup>
 
 </Project>
