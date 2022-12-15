@@ -31,7 +31,7 @@
         <Label Content="GROUP ID" HorizontalAlignment="Left" Height="40" Margin="729,114,0,0" VerticalAlignment="Top" Width="89"/>
         <Label Content="STATUS" HorizontalAlignment="Left" Height="40" Margin="729,176,0,0" VerticalAlignment="Top" Width="89"/>
         <Button x:Name="btnInsertUser" Content="INSERT " HorizontalAlignment="Left" Height="35" Margin="46,10,0,0" VerticalAlignment="Top" Width="116" Click="btnInsertUser_Click" Grid.Row="1"/>
-        <Button x:Name="btnUpdateUser" Content="UPDATE" HorizontalAlignment="Left" Height="36" Margin="46,86,0,0" VerticalAlignment="Top" Width="116" Grid.Row="1"/>
+        <Button x:Name="btnUpdateUser" Content="UPDATE" HorizontalAlignment="Left" Height="36" Margin="46,86,0,0" VerticalAlignment="Top" Width="116" Grid.Row="1" Click="btnUpdateUser_Click"/>
         <Button x:Name="btnDeleteUser" Content="DELETE" HorizontalAlignment="Left" Height="42" Margin="232,86,0,0" Grid.Row="1" VerticalAlignment="Top" Width="116" Click="btnDeleteUser_Click"/>
         <Button x:Name="btnExitUser" Content="EXIT" HorizontalAlignment="Left" Height="43" Margin="232,152,0,0" Grid.Row="1" VerticalAlignment="Top" Width="116" Click="btnExitUser_Click"/>
         <Button x:Name="btnClear" Content="CLEAR" HorizontalAlignment="Left" Height="40" Margin="46,152,0,0" Grid.Row="1" VerticalAlignment="Top" Width="116" Click="btnClear_Click"/>

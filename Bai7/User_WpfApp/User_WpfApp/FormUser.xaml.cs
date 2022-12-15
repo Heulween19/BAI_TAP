@@ -138,8 +138,27 @@ namespace User_WpfApp
 
         }
 
+        private void btnUpdateUser_Click(object sender, RoutedEventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("Update LstUser set UserName='"+txtUserName.Text+"',Password='"+txtPassword.Text+"',Birthday='"+txtBirthday.Text+"',Address='"+txtAddress.Text+"', Email= '"+txtEmail.Text+"',Age='"+txtAge.Text+"',Gender='"+txtGender.Text+"',GroupID='"+txtGroupID.Text +"',Status='"+txtStatus.Text+"' where UserID ='"+txtUserId.Text+"'  ",con);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Successful","Updated",MessageBoxButton.OK,MessageBoxImage.Information);
 
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally 
+            {
+                con.Close();
+                ClearData();
+                LoadGrid();
+            }
 
-
+        }
     }
 }

@@ -8,6 +8,7 @@
         Title="FormRole" Height="450" Width="800">
     <Grid>
         <Label Content="ROLE" FontSize="16" HorizontalAlignment="Left" Height="42" Margin="318,10,0,0" VerticalAlignment="Top" Width="118"/>
+        <DataGrid x:Name="dgvRole" HorizontalAlignment="Left" Height="218" Margin="10,195,0,0" VerticalAlignment="Top" Width="712" d:ItemsSource="{d:SampleData ItemCount=5}"/>
 
     </Grid>
 </Window>
